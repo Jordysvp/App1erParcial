@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import Presentacion from "./screens/Presentacion";
+import TablaDeMultiplicar from "./screens/TablaDeMultiplicacion";
+import AnalizarNumeros from "./screens/Numero";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+const Drawer = createDrawerNavigator();
+
+
+export default function App(){
+  return(
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Presentacion">
+        <Drawer.Screen name="Presentacion" component={Presentacion}/>
+        <Drawer.Screen name="Tabla de Multiplicar" component={TablaDeMultiplicar}/>
+        <Drawer.Screen name="Analizar Numeros" component={AnalizarNumeros}/>
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
