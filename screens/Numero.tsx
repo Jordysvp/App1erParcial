@@ -1,6 +1,7 @@
 import { resolvePlugin } from "@babel/core";
 import React, { useState } from "react";
 import { View, Text,  StyleSheet, TextInput, Button, ScrollView } from "react-native";
+// Jordys Valenzuela Perez 2023-0957
 
 
 export default function Numero(){

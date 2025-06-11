@@ -5,7 +5,7 @@ import Presentacion from "./screens/Presentacion";
 import TablaDeMultiplicar from "./screens/TablaDeMultiplicacion";
 import AnalizarNumeros from "./screens/Numero";
 
-
+// Jordys Valenzuela Perez 2023-0957
 const Drawer = createDrawerNavigator();
 
 

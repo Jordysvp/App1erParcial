@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 
+// Jordys Valenzuela Perez 2023-0957
 
 
 export default function Presentacion(){
